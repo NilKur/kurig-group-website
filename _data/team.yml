@@ -1,7 +1,18 @@
 # Group members shown under "Current Group" on the team page.
-# Example entry (remove the # signs to activate):
+# Fields: name, role, topic, photo (optional), bio (optional, a few sentences),
+# links (optional list of label + url, e.g. ORCID or LinkedIn).
+#
+# Example:
 # - name: "Jane Doe"
 #   role: "PhD student"
 #   topic: "Electrode materials"
 #   photo: "/assets/img/team/jane-doe.jpg"
-[]
+#   bio: "Jane studied chemistry in ... and works on ..."
+#   links:
+#     - label: "ORCID"
+#       url: "https://orcid.org/..."
+
+- name: "Navya Nanattil"
+  role: "PhD student"
+  topic: "Biogenic value chains · ElectroBioUp"
+  photo: "/assets/img/team/navya-nanattil.jpg"

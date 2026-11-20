@@ -166,9 +166,9 @@ p { margin: 0; }
 .person-bio { font-size: 18px; line-height: 1.6; color: var(--muted); }
 .two-col { display: flex; flex-wrap: wrap; gap: 32px; }
 .two-col > div { flex: 1 1 280px; display: flex; flex-direction: column; gap: 8px; }
-.member { flex: 1 1 220px; display: flex; flex-direction: column; gap: 12px; }
+.member { flex: 1 1 220px; max-width: 320px; display: flex; flex-direction: column; gap: 12px; }
 .member .name { font-size: 18px; font-weight: 600; }
-.join-card { flex: 1 1 220px; max-width: 420px; display: flex; flex-direction: column; justify-content: center; gap: 8px; padding: 28px; border-radius: 12px; background: var(--ink); color: #FFFFFF !important; text-decoration: none; min-height: 200px; }
+.join-card { flex: 1 1 220px; max-width: 320px; display: flex; flex-direction: column; justify-content: center; gap: 8px; padding: 28px; border-radius: 12px; background: var(--ink); color: #FFFFFF !important; text-decoration: none; min-height: 200px; }
 .join-card .eyebrow { color: var(--accent-on-dark); font-size: 13px; }
 .join-card strong { font-size: 22px; line-height: 1.25; }
 .join-card span:last-child { color: var(--line-strong); font-size: 15px; }
