@@ -89,14 +89,19 @@ nav: team
 <div class="stack" style="max-width: 760px">
 <p class="eyebrow">Current Group</p>
 <h2 class="section-title">The team</h2>
-{% if site.data.team.size == 0 %}<p class="muted" style="font-size: 18px; line-height: 1.6">The group starts at ITC Stuttgart in December 2026. Team members will be introduced here.</p>{% endif %}
+<p class="muted" style="font-size: 18px; line-height: 1.6">The group starts at ITC Stuttgart in December 2026.</p>
 </div>
 <div class="cards">
 {% for m in site.data.team %}
 <div class="member">
 {% if m.photo %}<img class="portrait" src="{{ m.photo | relative_url }}" alt="{{ m.name }}">{% endif %}
+<div class="stack" style="gap: 4px">
 <p class="name">{{ m.name }}</p>
-<p class="muted">{{ m.role }}{% if m.topic %} · {{ m.topic }}{% endif %}</p>
+<p class="person-role" style="font-size: 15px">{{ m.role }}</p>
+{% if m.topic %}<p class="muted" style="font-size: 15px">{{ m.topic }}</p>{% endif %}
+</div>
+{% if m.bio %}<p class="muted" style="font-size: 15px; line-height: 1.6">{{ m.bio }}</p>{% endif %}
+{% if m.links %}<p class="person-links">{% for l in m.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>{% endif %}
 </div>
 {% endfor %}
 <a class="join-card" href="{{ '/teaching.html#positions' | relative_url }}">
