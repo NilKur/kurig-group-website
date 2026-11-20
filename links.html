@@ -9,25 +9,36 @@ nav: links
 <h1>Useful resources</h1>
 <nav class="pills" aria-label="On this page">
 <a class="pill" href="#scholarships">Scholarships</a>
-<a class="pill" href="#software">Software / Platforms</a>
 <a class="pill" href="#networking">Networking</a>
 </nav>
 </div>
 </section>
 
 <div class="wrap" style="padding-top: 24px; padding-bottom: 96px">
-{% assign sections = "scholarships|Scholarships,software|Software / Platforms,networking|Networking" | split: "," %}
-{% for s in sections %}
-{% assign parts = s | split: "|" %}
-{% assign entries = site.data.links[parts[0]] %}
-<section id="{{ parts[0] }}" class="link-section">
-<h2>{{ parts[1] }}</h2>
+
+<section id="scholarships" class="link-section">
+<h2>Scholarships</h2>
+<div style="flex: 3 1 600px; display: flex; flex-direction: column; gap: 24px">
+<p class="muted" style="font-size: 17px; line-height: 1.65">Germany offers one of the richest funding landscapes for students and early-career researchers in Europe. Foundations, academies and research organizations support talented people at every career stage. The programs below are a starting point for your own search.</p>
+{% for group in site.data.links.scholarships %}
+<div>
+<h3 class="label" style="margin-bottom: 8px">{{ group.stage }}</h3>
 <ul class="link-list">
-{% for e in entries %}
+{% for p in group.programs %}<li><span style="color: var(--ink); font-size: 17px">{{ p }}</span></li>{% endfor %}
+</ul>
+</div>
+{% endfor %}
+<p class="muted" style="font-size: 14px; line-height: 1.6">This overview is for information only and makes no claim to completeness. We are not affiliated with these programs. Please refer to their official websites for eligibility, deadlines and application details.</p>
+</div>
+</section>
+
+<section id="networking" class="link-section">
+<h2>Networking</h2>
+<ul class="link-list">
+{% for e in site.data.links.networking %}
 <li><a href="{{ e.url }}">{{ e.name }}</a>{% if e.note %}<span>{{ e.note }}</span>{% endif %}</li>
 {% endfor %}
-{% if entries.size == 0 %}<li><span>Coming soon.</span></li>{% endif %}
 </ul>
 </section>
-{% endfor %}
+
 </div>

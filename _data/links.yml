@@ -1,21 +1,41 @@
-# Links page. Sections without entries show "Coming soon".
-# Each entry: name, url, note (note is optional).
+# Links page.
+# Scholarships are listed by name only (no links), grouped by career stage.
+# Networking entries: name, url, note (note is optional).
 
 scholarships:
-  - name: "Studienstiftung des deutschen Volkes"
-    url: "https://www.studienstiftung.de/"
-  - name: "Fonds der Chemischen Industrie"
-    url: "https://www.vci.de/fonds/"
-  - name: "DAAD"
-    url: "https://www.daad.de/"
-
-software: []
+  - stage: "Students"
+    programs:
+      - "Studienstiftung des deutschen Volkes"
+      - "Deutschlandstipendium"
+      - "DAAD scholarships for international students"
+  - stage: "Doctoral researchers"
+    programs:
+      - "Studienstiftung des deutschen Volkes (doctoral scholarship)"
+      - "Kekulé Fellowship, Fonds der Chemischen Industrie"
+      - "DAAD research grants"
+  - stage: "Postdocs and early independence"
+    programs:
+      - "Leopoldina Postdoctoral Fellowship"
+      - "Humboldt Research Fellowship"
+      - "DFG Walter Benjamin Programme"
+      - "Liebig Fellowship, Fonds der Chemischen Industrie"
+      - "CZS Nexus, Carl Zeiss Stiftung"
 
 networking:
   - name: "NaWuReT"
-    url: "https://doi.org/10.1002/cite.70088"
-    note: "Early-career network of the DECHEMA Section Reaction Engineering"
+    url: "https://www.linkedin.com/company/early-career-reaction-engineers-nawuret/"
+    note: "Early-career network for chemical reaction engineering (LinkedIn)"
+  - name: "DECHEMA Section Reaction Engineering"
+    url: "https://dechema.de/en/Networks/DECHEMA+Committees/Chemical+Reaction+Engineering+Section.html"
   - name: "DECHEMA"
     url: "https://dechema.de/"
+  - name: "GDCh JungesChemieForum (JCF)"
+    url: "https://gdch.de/en/jcf"
+    note: "Network for students and early-career chemists"
+  - name: "GDCh Division of Electrochemistry"
+    url: "https://gdch.de/en/divisions/electrochemistry"
+  - name: "GDCh Division of Sustainable Chemistry"
+    url: "https://gdch.de/en/divisions/sustainable-chemistry"
   - name: "EFCE"
     url: "https://efce.info/"
+    note: "European Federation of Chemical Engineering"
