@@ -1,0 +1,62 @@
+---
+layout: default
+title: Home
+nav: home
+---
+<section class="hero">
+<div class="wrap hero-inner">
+<p class="eyebrow">Institute of Technical Chemistry · University of Stuttgart</p>
+<h1>Electrochemical methods for sustainable value creation.</h1>
+<p class="lead">We use electrochemistry to create value from renewable resources, always under real application conditions. Our work spans biogenic value chains, electrode materials, cells for continuous operation and alternating current electrolysis.</p>
+<div class="btns">
+<a class="btn btn-primary" href="{{ '/research.html' | relative_url }}">Our research</a>
+<a class="btn" href="{{ '/teaching.html#positions' | relative_url }}">Open positions</a>
+</div>
+</div>
+{% include wave.svg %}
+</section>
+
+<section class="wrap section stack-lg">
+<div class="row-between">
+<div class="stack" style="max-width: 760px">
+<p class="eyebrow">Research</p>
+<h2 class="section-title">Electrochemistry under application conditions</h2>
+</div>
+<a href="{{ '/research.html' | relative_url }}" style="font-weight: 500">More on our research</a>
+</div>
+<div class="cards">
+<article class="card"><span class="num">01</span><h3>Biogenic value chains</h3><p>Biogenic residues, waste streams and bio-based intermediates as real-world starting points for value-added products.</p></article>
+<article class="card"><span class="num">02</span><h3>Electrode materials</h3><p>Robust, tailored electrode materials, developed and tested in authentic mixtures.</p></article>
+<article class="card"><span class="num">03</span><h3>Cells for continuous operation</h3><p>Electrochemical cells tailored to complex feed streams, from lab scale toward application.</p></article>
+<article class="card card-soft"><span class="num">Across all</span><h3>Alternating current electrolysis</h3><p>Switching polarity to steer selectivity and regenerate electrodes during operation.</p></article>
+</div>
+<div class="callout">
+<span class="label">Funding</span>
+<p>The group is being built around the CZS Nexus project ElectroBioUp, funded by the Carl Zeiss Foundation. <a href="{{ site.czs_project_url }}">About the project</a></p>
+</div>
+</section>
+
+<section class="section-soft">
+<div class="wrap section stack-lg" style="gap: 32px">
+<div class="row-between">
+<div class="stack"><p class="eyebrow">News</p><h2 class="section-title">Latest</h2></div>
+<a href="{{ '/publications.html' | relative_url }}" style="font-weight: 500">All publications</a>
+</div>
+<div class="list">
+{% for item in site.data.news limit: 3 %}
+<div><span class="date">{{ item.date }}</span><p class="text">{{ item.text }}</p></div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section class="section-dark">
+<div class="wrap section row-between" style="align-items: center; gap: 32px">
+<div class="stack" style="flex: 1 1 520px">
+<p class="eyebrow">Join us</p>
+<h2 class="section-title">Interested in joining the group?</h2>
+<p class="muted" style="font-size: 18px; line-height: 1.6">We are building the team. If you are interested in electrochemistry, reaction engineering or electrode materials, get in touch.</p>
+</div>
+<a class="btn btn-light" href="{{ '/teaching.html#positions' | relative_url }}">Open positions</a>
+</div>
+</section>

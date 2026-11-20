@@ -1,0 +1,4 @@
+<li>
+<p class="pub-title">{% if include.p.doi %}<a href="https://doi.org/{{ include.p.doi }}">{{ include.p.title }}</a>{% else %}{{ include.p.title }}{% endif %}</p>
+<p class="pub-meta">{{ include.p.authors | replace: "N. Kurig", "<strong>N. Kurig</strong>" }} · <em>{{ include.p.journal }}</em> {{ include.p.ref }}{% if include.p.note %} · {{ include.p.note }}{% endif %}</p>
+</li>

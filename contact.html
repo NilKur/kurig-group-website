@@ -1,0 +1,38 @@
+---
+layout: default
+title: Contact
+nav: contact
+---
+<section class="page-head">
+<div class="wrap page-head-inner">
+<p class="eyebrow">Contact</p>
+<h1>Get in touch</h1>
+</div>
+</section>
+
+<section class="wrap section contact-grid">
+<div>
+<div class="contact-block">
+<h2 class="label">Address</h2>
+<p>Dr. Nils Kurig<br>{% for line in site.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>
+</div>
+{% if site.email != "" or site.phone != "" %}
+<div class="contact-block">
+<h2 class="label">Email and phone</h2>
+{% if site.email != "" %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
+{% if site.phone != "" %}<p>{{ site.phone }}</p>{% endif %}
+</div>
+{% endif %}
+</div>
+<div>
+<div class="contact-block">
+<h2 class="label">Office</h2>
+<p>{{ site.office }}</p>
+<a href="https://www.itc.uni-stuttgart.de/institut/kontakt/" style="font-size: 16px">Directions to ITC</a>
+</div>
+<div class="contact-block">
+<h2 class="label">Profiles</h2>
+<p><a href="{{ site.profiles.orcid }}">ORCID</a> · <a href="{{ site.profiles.scholar }}">Google Scholar</a> · <a href="{{ site.profiles.linkedin }}">LinkedIn</a></p>
+</div>
+</div>
+</section>

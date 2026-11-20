@@ -1,0 +1,21 @@
+# Links page. Sections without entries show "Coming soon".
+# Each entry: name, url, note (note is optional).
+
+scholarships:
+  - name: "Studienstiftung des deutschen Volkes"
+    url: "https://www.studienstiftung.de/"
+  - name: "Fonds der Chemischen Industrie"
+    url: "https://www.vci.de/fonds/"
+  - name: "DAAD"
+    url: "https://www.daad.de/"
+
+software: []
+
+networking:
+  - name: "NaWuReT"
+    url: "https://doi.org/10.1002/cite.70088"
+    note: "Early-career network of the DECHEMA Section Reaction Engineering"
+  - name: "DECHEMA"
+    url: "https://dechema.de/"
+  - name: "EFCE"
+    url: "https://efce.info/"

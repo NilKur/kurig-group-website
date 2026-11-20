@@ -1,0 +1,103 @@
+# Publications. Newest first.
+# To add a paper: copy an entry, change the fields, keep the indentation.
+# authors: write names plainly; "N. Kurig" is set in bold automatically; § = shared first authorship, * = corresponding author.
+
+articles:
+  - year: 2026
+    title: "Arylhydrazines: Convenient Homogeneous Reductants for Scalable Cross-Coupling"
+    authors: "N. Kurig§, D. A. Cagan§, K. C. Harper, Y. Kawamata, D. G. Blackmond, P. S. Baran"
+    journal: "Angew. Chem. Int. Ed."
+    ref: "2026, e9252206"
+    doi: "10.1002/ange.9252206"
+  - year: 2026
+    title: "Tuning the Efficiency of Electrocatalytic Primary Amine Synthesis via Reductive Amination of Levulinic Acid Using Pb as a Catalytic Additive"
+    authors: "M. Grundmann, J. Kümper, T. Henrich, S. Mürtz, N. Kurig, R. Palkovits"
+    journal: "ChemElectroChem"
+    ref: "2026, 13, e202500373"
+    doi: "10.1002/celc.202500373"
+  - year: 2025
+    title: "Pyrolytic Carbon: An Inexpensive, Robust, and Versatile Electrode for Synthetic Organic Electrochemistry"
+    authors: "T. Ewing§, N. Kurig§, Y. Yamaki, J. Sun, T. Knowles, A. Gollapudi, Y. Kawamata, P. S. Baran"
+    journal: "Angew. Chem. Int. Ed."
+    ref: "2025, e202417122"
+    doi: "10.1002/anie.202417122"
+  - year: 2024
+    title: "Metallic Impurities in Electrolysis: Catalytic Effect of Pb Traces in Reductive Amination and Acetone Reduction"
+    authors: "J. Kümper, S. D. Mürtz, Y. Guan, S. Kumari, P. J. C. Hausoul, N. Kurig, P. Sautet, R. Palkovits"
+    journal: "Angew. Chem. Int. Ed."
+    ref: "2024, e202411532"
+    doi: "10.1002/anie.202411532"
+  - year: 2024
+    title: "Electrochemical Ethanol Oxidation Using RuO₂-based Catalysts: Suppressing OER and Tailored Switching Between Water Oxidation and Ethanol Oxidation"
+    authors: "I. Kohlhaas, N. Kurig, R. Palkovits"
+    journal: "ChemElectroChem"
+    ref: "2024, 11, e202300753"
+    doi: "10.1002/celc.202300753"
+  - year: 2024
+    title: "Transition-Metal Substituted Polyoxometalates as Soluble Redox-Mediators in Electrocatalytic Biomass Conversion"
+    authors: "S. D. Mürtz, J.-C. Raabe, M. J. Poller, J. Albert, R. Palkovits, N. Kurig*"
+    journal: "ChemCatChem"
+    ref: "2024, 16, e202301632"
+    doi: "10.1002/cctc.202301632"
+  - year: 2024
+    title: "Spectroelectrochemical Exploration of Biogenic Substrates for Electrosynthesis"
+    authors: "N. Kurig, R. Palkovits"
+    journal: "Chem. Ing. Tech."
+    ref: "2024, 96, 781–788"
+    doi: "10.1002/cite.202300176"
+  - year: 2023
+    title: "Electrochemical Nitration for Organic C–N Bond Formation: A Current View on Possible N-Sources, Mechanisms, and Technological Feasibility"
+    authors: "N. Kurig*, R. Palkovits"
+    journal: "Green Chem."
+    ref: "2023, 25, 7508–7517"
+    note: "Green Chemistry Hot Article 2023"
+    doi: "10.1039/d3gc02084c"
+  - year: 2023
+    title: "Electrochemical Transformation of D,L-Glutamic Acid into Acrylonitrile"
+    authors: "J. Kümper, J. Meyers, R. Sebers, N. Kurig, R. Palkovits"
+    journal: "Green Chem."
+    ref: "2023, 25, 6231–6237"
+    note: "Green Chemistry Hot Article 2023"
+    doi: "10.1039/d3gc01045g"
+  - year: 2023
+    title: "Electrochemical Cellobiose Valorization: Anodic Oxidation to Cellobionic Acid and Cathodic Reduction to Cellobitol"
+    authors: "M. Chávez Morejón§, N. Kurig§, Y. S. Tschauder, F. Harnisch, R. Palkovits"
+    journal: "ChemistrySelect"
+    ref: "2023, 8, e202301823"
+    doi: "10.1002/slct.202301823"
+  - year: 2022
+    title: "3D Printed Microreactors for the Continuous Non-Kolbe Electrolysis"
+    authors: "N. Kurig, J. Meyers, E. Richter, S. Palkovits, R. Palkovits"
+    journal: "Chem. Ing. Tech."
+    ref: "2022, 94, 786–790"
+    doi: "10.1002/cite.202100178"
+  - year: 2021
+    title: "Reviving Electrocatalytic Reductive Amination: A Sustainable Route from Biogenic Levulinic Acid to 1,5-Dimethyl-2-pyrrolidone"
+    authors: "S. D. Mürtz, N. Kurig, F. J. Holzhäuser, R. Palkovits"
+    journal: "Green Chem."
+    ref: "2021, 23, 8428–8433"
+    doi: "10.1039/d1gc02513a"
+  - year: 2021
+    title: "(Non-)Kolbe Chemistry Going with the Flow: The Continuous Electrolysis of Biogenic Acids"
+    authors: "N. Kurig, J. Meyers, F. J. Holzhäuser, S. Palkovits, R. Palkovits"
+    journal: "ACS Sustainable Chem. Eng."
+    ref: "2021, 9, 1229–1234"
+    doi: "10.1021/acssuschemeng.0c06982"
+  - year: 2020
+    title: "Intramolecular Biradical Recombination of Dicarboxylic Acids to Unsaturated Compounds: A New Approach to an Old Kolbe Reaction"
+    authors: "J. Meyers, N. Kurig, C. Gohlke, M. Valeske, S. Panitz, F. J. Holzhäuser, R. Palkovits"
+    journal: "ChemElectroChem"
+    ref: "2020, 7, 4873–4878"
+    doi: "10.1002/celc.202001256"
+
+essays:
+  - title: "NaWuReT: The Early-Career Network for Chemical Reaction Engineering"
+    authors: "N. Kurig, E. Moioli, M. Börnhorst, J. Friedland, P. Röse"
+    journal: "Chem. Ing. Tech."
+    ref: "2026, 98, 177–180"
+    doi: "10.1002/cite.70088"
+  - title: "NaWuReT Colloquium: Veni, vidi, vici? Visionary Leaders in Chemical Reaction Engineering"
+    authors: "N. Kurig, B. Kreitz, E. Moioli, M. Börnhorst, J. Friedland"
+    journal: "Chem. Ing. Tech."
+    ref: "2025, 97, 374–377"
+    doi: "10.1002/cite.202500029"

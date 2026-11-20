@@ -1,0 +1,109 @@
+---
+layout: default
+title: Team
+nav: team
+---
+<section class="page-head">
+<div class="wrap page-head-inner">
+<p class="eyebrow">Team</p>
+<h1>People</h1>
+<nav class="pills" aria-label="On this page">
+<a class="pill" href="#nils">Nils Kurig</a>
+<a class="pill" href="#group">Current Group</a>
+</nav>
+</div>
+</section>
+
+<section id="nils" class="wrap section person">
+<div class="person-aside">
+{% if site.portrait != "" %}
+<img class="portrait" src="{{ site.portrait | relative_url }}" alt="Portrait of Nils Kurig">
+{% else %}
+<div class="portrait portrait-placeholder" role="img" aria-label="Portrait coming soon">
+<svg viewBox="0 0 120 40" aria-hidden="true"><path d="M0 20 H10 V6 H35 V34 H60 V6 H85 V34 H110 V20 H120" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+</div>
+{% endif %}
+<div class="person-links">
+{% if site.email != "" %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
+<a href="{{ site.profiles.orcid }}">ORCID</a>
+<a href="{{ site.profiles.scholar }}">Google Scholar</a>
+<a href="{{ site.profiles.linkedin }}">LinkedIn</a>
+</div>
+</div>
+
+<div class="person-main">
+<div class="stack">
+<h2 class="section-title">Dr. Nils Kurig</h2>
+<p class="person-role">Independent Group Leader (<a href="{{ site.czs_project_url }}">CZS Nexus</a> program)</p>
+<p class="person-bio">Nils leads an independent junior research group at the Institute of Technical Chemistry, University of Stuttgart, funded through the CZS Nexus program of the Carl Zeiss Foundation. He did his doctorate in technical chemistry at RWTH Aachen University, with a focus on electrochemical reaction engineering and biomass valorization. As a Leopoldina postdoctoral fellow at Scripps Research, he added synthetic organic electrochemistry. His group brings both together to develop sustainable electrochemical methods under real application conditions.</p>
+</div>
+
+<div>
+<h3 class="label" style="margin-bottom: 8px">Career</h3>
+<div class="timeline">
+<div class="row"><span class="when">since 2026</span><p class="what">Independent Group Leader (<a href="{{ site.czs_project_url }}">CZS Nexus</a> program), Institute of Technical Chemistry, University of Stuttgart</p></div>
+<div class="row"><span class="when">2026</span><p class="what">Junior Research Group Leader (<a href="https://www.vci.de/fonds/">Liebig Fellowship</a>), Chair of Power-to-X Technologies, FAU Erlangen-Nürnberg</p></div>
+<div class="row"><span class="when">2024–2026</span><p class="what">Postdoctoral Researcher (Leopoldina Fellowship), Baran Lab, Scripps Research, La Jolla, USA</p></div>
+<div class="row"><span class="when">2022–2024</span><p class="what">Group Leader Electrochemistry, Palkovits group, Institute of Technical and Macromolecular Chemistry, RWTH Aachen University</p></div>
+</div>
+</div>
+
+<div>
+<h3 class="label" style="margin-bottom: 8px">Education</h3>
+<div class="timeline">
+<div class="row"><span class="when">2019–2023</span><p class="what">Dr. rer. nat. in Chemistry (<em>summa cum laude</em>), RWTH Aachen University</p></div>
+<div class="row"><span class="when">2016–2018</span><p class="what">M.Sc. in Chemistry (with distinction), RWTH Aachen University</p></div>
+<div class="row"><span class="when">2013–2016</span><p class="what">B.Sc. in Chemistry, RWTH Aachen University</p></div>
+</div>
+</div>
+
+<div class="two-col">
+<div>
+<h3 class="label">Awards and fellowships</h3>
+<ul class="bullets">
+<li>CZS Nexus Junior Research Group, Carl Zeiss Foundation (2026)</li>
+<li>Liebig Fellowship, Fonds der Chemischen Industrie (2026)</li>
+<li>Leopoldina Postdoctoral Fellowship (2024–2026)</li>
+<li>Borchers Medal, RWTH Aachen, for the doctorate (2024)</li>
+<li>Best Talk Award, NIOK, Netherlands Catalysis and Chemistry Conference (2023)</li>
+<li>Springorum Medal, RWTH Aachen, for the master’s degree (2018)</li>
+<li>Scholarship of the Studienstiftung des deutschen Volkes (2017–2023)</li>
+</ul>
+</div>
+<div>
+<h3 class="label">Service</h3>
+<ul class="bullets">
+<li>Speaker of NaWuReT and board member, DECHEMA Section Reaction Engineering (since 2025)</li>
+<li>Selection committee, Studienstiftung des deutschen Volkes (since 2021)</li>
+<li>Award juries, GDCh Electrochemistry Conference and DECHEMA Reaction Engineering Meeting (since 2024)</li>
+<li>Reviewer for Angew. Chem., JACS, Nat. Commun., ACS Cent. Sci. and others</li>
+<li>Member of GDCh and DECHEMA</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="group" class="section-soft">
+<div class="wrap section stack-lg">
+<div class="stack" style="max-width: 760px">
+<p class="eyebrow">Current Group</p>
+<h2 class="section-title">The team</h2>
+{% if site.data.team.size == 0 %}<p class="muted" style="font-size: 18px; line-height: 1.6">The group starts at ITC Stuttgart in December 2026. Team members will be introduced here.</p>{% endif %}
+</div>
+<div class="cards">
+{% for m in site.data.team %}
+<div class="member">
+{% if m.photo %}<img class="portrait" src="{{ m.photo | relative_url }}" alt="{{ m.name }}">{% endif %}
+<p class="name">{{ m.name }}</p>
+<p class="muted">{{ m.role }}{% if m.topic %} · {{ m.topic }}{% endif %}</p>
+</div>
+{% endfor %}
+<a class="join-card" href="{{ '/teaching.html#positions' | relative_url }}">
+<span class="eyebrow">Open positions</span>
+<strong>This could be you.</strong>
+<span>See PhD positions, theses and internships</span>
+</a>
+</div>
+</div>
+</section>
