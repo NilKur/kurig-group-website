@@ -1,0 +1,44 @@
+---
+layout: default
+title: Publications
+nav: publications
+---
+<section class="page-head">
+<div class="wrap page-head-inner row-between" style="align-items: flex-end">
+<div class="stack" style="gap: 20px">
+<p class="eyebrow">Publications</p>
+<h1>Publications</h1>
+<nav class="pills" aria-label="On this page">
+<a class="pill" href="#articles">Peer-reviewed articles</a>
+<a class="pill" href="#essays">Essays</a>
+</nav>
+</div>
+<div class="btns">
+<a class="btn" href="{{ site.profiles.scholar }}">Google Scholar</a>
+<a class="btn" href="{{ site.profiles.orcid }}">ORCID</a>
+</div>
+</div>
+</section>
+
+<section id="articles" class="wrap section stack-lg" style="padding-bottom: 24px">
+<div class="row-between" style="align-items: baseline">
+<h2 class="sub-title">Previous work</h2>
+<p class="muted" style="font-size: 15px">§ shared first authorship · * corresponding author</p>
+</div>
+{% assign years = site.data.publications.articles | group_by: "year" %}
+{% for y in years %}
+<div class="year-group">
+<h3>{{ y.name }}</h3>
+<ol class="pubs">
+{% for p in y.items %}{% include pub.html p=p %}{% endfor %}
+</ol>
+</div>
+{% endfor %}
+</section>
+
+<section id="essays" class="wrap section stack" style="gap: 32px; padding-top: 48px">
+<h2 class="sub-title">Essays</h2>
+<ol class="pubs">
+{% for p in site.data.publications.essays %}{% include pub.html p=p %}{% endfor %}
+</ol>
+</section>

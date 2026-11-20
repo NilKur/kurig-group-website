@@ -1,0 +1,32 @@
+# Site settings for the Kurig Group website.
+# Fields left empty ("") are hidden on the site until you fill them in.
+
+title: Kurig Group
+description: Electrochemical methods for sustainable value creation. Institute of Technical Chemistry, University of Stuttgart.
+lang: en
+
+# Contact details (leave empty until available)
+email: ""        # e.g. nils.kurig@itc.uni-stuttgart.de
+phone: ""        # e.g. +49 711 685 xxxxx
+
+address:
+  - Institute of Technical Chemistry (ITC)
+  - University of Stuttgart
+  - Pfaffenwaldring 55
+  - 70569 Stuttgart, Germany
+office: Room 1.839, Pfaffenwaldring 55
+
+# Portrait on the team page, e.g. /assets/img/nils-kurig.jpg (leave empty for the placeholder)
+portrait: ""
+
+profiles:
+  orcid: https://orcid.org/0000-0003-0717-1964
+  scholar: https://scholar.google.de/citations?user=BKc1Mr8AAAAJ&hl=en
+  linkedin: https://www.linkedin.com/in/nils-kurig-73249b367/
+
+czs_project_url: https://www.carl-zeiss-stiftung.de/uebersicht-projekte/detail/upgrading-complex-renewable-feedstock-in-an-electrified-biorefinery-under-application-conditions
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

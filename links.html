@@ -1,0 +1,33 @@
+---
+layout: default
+title: Links
+nav: links
+---
+<section class="page-head">
+<div class="wrap page-head-inner">
+<p class="eyebrow">Links</p>
+<h1>Useful resources</h1>
+<nav class="pills" aria-label="On this page">
+<a class="pill" href="#scholarships">Scholarships</a>
+<a class="pill" href="#software">Software / Platforms</a>
+<a class="pill" href="#networking">Networking</a>
+</nav>
+</div>
+</section>
+
+<div class="wrap" style="padding-top: 24px; padding-bottom: 96px">
+{% assign sections = "scholarships|Scholarships,software|Software / Platforms,networking|Networking" | split: "," %}
+{% for s in sections %}
+{% assign parts = s | split: "|" %}
+{% assign entries = site.data.links[parts[0]] %}
+<section id="{{ parts[0] }}" class="link-section">
+<h2>{{ parts[1] }}</h2>
+<ul class="link-list">
+{% for e in entries %}
+<li><a href="{{ e.url }}">{{ e.name }}</a>{% if e.note %}<span>{{ e.note }}</span>{% endif %}</li>
+{% endfor %}
+{% if entries.size == 0 %}<li><span>Coming soon.</span></li>{% endif %}
+</ul>
+</section>
+{% endfor %}
+</div>

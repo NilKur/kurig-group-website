@@ -1,0 +1,7 @@
+# Group members shown under "Current Group" on the team page.
+# Example entry (remove the # signs to activate):
+# - name: "Jane Doe"
+#   role: "PhD student"
+#   topic: "Electrode materials"
+#   photo: "/assets/img/team/jane-doe.jpg"
+[]
