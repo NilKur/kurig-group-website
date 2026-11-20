@@ -17,7 +17,7 @@ address:
 office: Room 1.839, Pfaffenwaldring 55
 
 # Portrait on the team page, e.g. /assets/img/nils-kurig.jpg (leave empty for the placeholder)
-portrait: ""
+portrait: "/assets/img/nils-kurig.jpg"
 
 profiles:
   orcid: https://orcid.org/0000-0003-0717-1964
