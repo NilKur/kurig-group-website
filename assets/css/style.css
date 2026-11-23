@@ -224,6 +224,6 @@ p { margin: 0; }
 }
 
 /* Research figures inside the topic cards */
-.card-fig { margin: auto 0 0; padding-top: 16px; }
+.card-fig { margin: auto 0; padding-top: 16px; }
 .research-fig { display: block; width: 100%; height: auto; margin: 0 auto; }
-@media (min-width: 900px) { .fig-electrodes .research-fig { max-width: 78%; } }
+@media (min-width: 900px) { .fig-electrodes .research-fig { max-width: 90%; } }
