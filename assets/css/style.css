@@ -223,10 +223,7 @@ p { margin: 0; }
   .hero .lead { font-size: 18px; }
 }
 
-/* Research topics with figures */
-.topics { display: flex; flex-direction: column; gap: 24px; }
-.topic { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: center; gap: 32px 48px; }
-.topic-text { display: flex; flex-direction: column; gap: 12px; }
-.topic figure { margin: 0; }
-.research-fig { display: block; width: 100%; height: auto; }
-@media (max-width: 900px) { .topic { grid-template-columns: minmax(0, 1fr); padding: 24px 20px; } }
+/* Research figures inside the topic cards */
+.card-fig { margin: auto 0 0; padding-top: 16px; }
+.research-fig { display: block; width: 100%; height: auto; margin: 0 auto; }
+@media (min-width: 900px) { .fig-electrodes .research-fig { max-width: 78%; } }
