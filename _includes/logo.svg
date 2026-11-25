@@ -1,5 +1,5 @@
-<svg class="logo" viewBox="-52 16 1134 286" aria-hidden="true" focusable="false">
-<g fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+<svg class="logo" viewBox="-52 22 1058 270" aria-hidden="true" focusable="false">
+<g fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
 <path d="M0 50 V200 M66 52 L0 148 M22 116 L72 200"/>
 <path d="M96 100 V160 A35 35 0 0 0 166 160 M166 100 V200"/>
 <path d="M192 100 V200 M192 142 A42 42 0 0 1 234 100 H244"/>
@@ -14,9 +14,9 @@
 <path d="M848 100 V262"/>
 <circle cx="898" cy="150" r="50"/>
 </g>
-<circle cx="270" cy="56" r="10" fill="currentColor"/>
-<g fill="none" class="logo-wave" stroke-width="9">
-<path d="M-40 30 H83 V82 H270 V285 H526 V82 H848 V285 H990" stroke-linejoin="miter" stroke-linecap="butt"/>
-<path d="M1014 285 H1080" stroke-linecap="round" stroke-dasharray="0 26"/>
+<circle cx="270" cy="56" r="7" fill="currentColor"/>
+<g fill="none" class="logo-wave" stroke-width="5.5">
+<path d="M-40 30 H83 V82 H270 V285 H526 V82 H848 V285 H940" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path d="M958 285 h0.01 M976 285 h0.01 M994 285 h0.01" stroke-linecap="round"/>
 </g>
 </svg>

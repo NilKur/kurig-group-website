@@ -43,7 +43,7 @@ p { margin: 0; }
 .site-header { position: sticky; top: 0; z-index: 50; background: #FFFFFF; border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; padding-top: 14px; padding-bottom: 14px; }
 .brand { display: flex; align-items: center; min-height: 44px; color: var(--ink); }
-.logo { height: 40px; width: 159px; display: block; }
+.logo { height: 40px; width: 157px; display: block; }
 .logo-wave { stroke: var(--accent); }
 
 .main-nav > ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 4px 28px; font-size: 15px; }
